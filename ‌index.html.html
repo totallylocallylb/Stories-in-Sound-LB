@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories in Sound: Leighton Buzzard | Community Oral History Project</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Fraunces (for heritage warmth) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Fraunces', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            teal: '#135D66',      // Deep badge teal
+                            dark: '#0B3C43',      // Rich dark teal-slate
+                            mid: '#2E7D87',       // Medium accent teal
+                            mint: '#D6EFEA',      // Soft circular badge mint
+                            mintLight: '#F0F9F7', // Very pale mint background
+                            slate: '#2C3A3F',     // Warm slate text
+                            sand: '#F7F5F0',      // Warm archival paper tint
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-sand text-brand-slate antialiased selection:bg-brand-teal selection:text-white">
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-brand-teal/10 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <!-- Mini SVG Emblem -->
+                <div class="w-10 h-10 rounded-full bg-brand-teal flex items-center justify-center text-brand-mint shadow-sm group-hover:scale-105 transition-transform">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
+                    </svg>
+                </div>
+                <div>
+                    <span class="font-serif font-bold text-brand-dark text-base sm:text-lg block leading-tight">Stories in Sound</span>
+                    <span class="text-xs font-medium text-brand-teal tracking-wider uppercase block">Leighton Buzzard</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-brand-slate">
+                <a href="#about" class="hover:text-brand-teal transition-colors">About &amp; Why Now</a>
+                <a href="#get-involved" class="hover:text-brand-teal transition-colors">Get Involved</a>
+                <a href="#faq" class="hover:text-brand-teal transition-colors">FAQs</a>
+                <a href="#social-kit" class="hover:text-brand-teal transition-colors">Share the Word</a>
+                <a href="#join-form" class="bg-brand-teal hover:bg-brand-dark text-white px-5 py-2.5 rounded-full font-semibold transition-all shadow-sm hover:shadow">
+                    Take Part
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" aria-label="Toggle Menu" class="md:hidden p-2.5 rounded-xl text-brand-teal hover:bg-brand-mintLight focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path id="menu-icon-open" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-brand-teal/10 px-4 pt-2 pb-5 space-y-2 shadow-lg">
+            <a href="#about" class="block px-4 py-3 rounded-xl text-base font-medium hover:bg-brand-mintLight hover:text-brand-teal">About &amp; Why Now</a>
+            <a href="#get-involved" class="block px-4 py-3 rounded-xl text-base font-medium hover:bg-brand-mintLight hover:text-brand-teal">Two Ways to Get Involved</a>
+            <a href="#faq" class="block px-4 py-3 rounded-xl text-base font-medium hover:bg-brand-mintLight hover:text-brand-teal">Questions &amp; Answers</a>
+            <a href="#social-kit" class="block px-4 py-3 rounded-xl text-base font-medium hover:bg-brand-mintLight hover:text-brand-teal">Social Media Launch Post</a>
+            <div class="pt-2">
+                <a href="#join-form" class="block w-full text-center bg-brand-teal text-white px-5 py-3.5 rounded-full font-semibold shadow-sm">
+                    Express Your Interest
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-b from-brand-mintLight via-brand-mint/40 to-brand-sand pt-10 pb-16 sm:pt-16 sm:pb-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                
+                <!-- Left Column: Intro & Audio Preview -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-brand-teal/20 text-brand-teal text-xs sm:text-sm font-semibold shadow-sm">
+                        <span class="w-2 h-2 rounded-full bg-brand-teal animate-pulse"></span>
+                        Independent Grassroots Community Project
+                    </div>
+
+                    <h1 class="font-serif text-3xl sm:text-5xl lg:text-[3.25rem] font-bold text-brand-dark leading-[1.15]">
+                        Preserving the Living History of <span class="text-brand-teal">Leighton Buzzard</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-brand-slate/90 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Hi, I’m a local Leighton Buzzard resident and lifelong history enthusiast setting up an independent, community-led oral history archive. Together, we’re recording the real voices, everyday memories, and untold stories of the people who make our town what it is.
+                    </p>
+
+                    <!-- Primary CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-1">
+                        <a href="#join-form" onclick="selectRole('storyteller')" class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-brand-teal hover:bg-brand-dark text-white font-semibold text-base shadow-md hover:shadow-lg transition-all text-center">
+                            Share Your Story
+                        </a>
+                        <a href="#join-form" onclick="selectRole('interviewer')" class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-white hover:bg-brand-mintLight text-brand-teal border-2 border-brand-teal/30 font-semibold text-base transition-all text-center">
+                            Help Conduct Interviews
+                        </a>
+                    </div>
+
+                    <!-- Interactive Audio Preview / Sample Story Player -->
+                    <div class="mt-8 bg-white/95 backdrop-blur rounded-2xl p-4 sm:p-5 border border-brand-teal/20 shadow-md text-left max-w-xl mx-auto lg:mx-0">
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <div class="flex items-center gap-2">
+                                <span class="px-2.5 py-0.5 rounded-md bg-brand-mint text-brand-dark text-xs font-bold uppercase tracking-wide">Sample Clip</span>
+                                <span class="text-xs sm:text-sm font-semibold text-brand-dark">Episode 00: Market Day &amp; Canal Memories</span>
+                            </div>
+                            <span id="audio-timer" class="text-xs font-mono font-medium text-brand-teal">0:00 / 0:24</span>
+                        </div>
+
+                        <div class="flex items-center gap-3.5">
+                            <button id="play-sample-btn" type="button" aria-label="Play or Pause Sample Audio" class="w-12 h-12 shrink-0 rounded-full bg-brand-teal hover:bg-brand-dark text-white flex items-center justify-center shadow transition-transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-brand-teal focus:ring-offset-2">
+                                <!-- Play Icon -->
+                                <svg id="icon-play" class="w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                                <!-- Pause Icon -->
+                                <svg id="icon-pause" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                                </svg>
+                            </button>
+
+                            <!-- Interactive Animated Waveform Bars -->
+                            <div class="flex-1">
+                                <div id="waveform-container" class="h-10 flex items-center justify-between gap-1 px-1 cursor-pointer" title="Click to toggle sample preview">
+                                    <!-- Bars generated dynamically via JS -->
+                                </div>
+                                <p id="sample-caption" class="text-xs text-brand-slate/80 italic mt-1.5 line-clamp-2">
+                                    "Press play to hear an ambient soundscape &amp; preview of how our oral history recordings capture warmth and place..."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Custom Recreated Circular Emblem Badge -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-72 h-72 sm:w-96 sm:h-96 drop-shadow-xl">
+                        <!-- Custom High-Precision Vector Illustration matching the project logo -->
+                        <svg viewBox="0 0 400 400" class="w-full h-full" role="img" aria-label="Stories in Sound: Leighton Buzzard circular logo featuring a vintage microphone, soundwaves, the Market Cross, a Grand Union Canal narrowboat, and a Leighton Buzzard Light Railway steam train">
+                            <defs>
+                                <radialGradient id="mintBg" cx="50%" cy="45%" r="55%">
+                                    <stop offset="0%" stop-color="#E5F6F3" />
+                                    <stop offset="70%" stop-color="#BDE4DD" />
+                                    <stop offset="100%" stop-color="#96CFC6" />
+                                </radialGradient>
+                                <clipPath id="innerCircleClip">
+                                    <circle cx="200" cy="200" r="144" />
+                                </clipPath>
+                                <!-- Top text path -->
+                                <path id="topArc" d="M 48,200 A 152,152 0 1,1 352,200" />
+                                <!-- Bottom text path -->
+                                <path id="bottomArc" d="M 35,208 A 166,166 0 0,0 365,208" />
+                            </defs>
+
+                            <!-- Outer White & Teal Rings -->
+                            <circle cx="200" cy="200" r="194" fill="#FFFFFF" stroke="#135D66" stroke-width="3" />
+                            <circle cx="200" cy="200" r="186" fill="#135D66" />
+                            <circle cx="200" cy="200" r="149" fill="#FFFFFF" />
+                            <circle cx="200" cy="200" r="144" fill="url(#mintBg)" />
+
+                            <!-- Circular Typography -->
+                            <text fill="#FFFFFF" font-family="Inter, sans-serif" font-weight="700" font-size="20.5" letter-spacing="0.4">
+                                <textPath href="#topArc" startOffset="50%" text-anchor="middle">
+                                    Stories in Sound : Leighton Buzzard
+                                </textPath>
+                            </text>
+                            <text fill="#E6F5F2" font-family="Inter, sans-serif" font-weight="500" font-size="14.2" letter-spacing="0.3">
+                                <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">
+                                    Preserving the Living History of Leighton Buzzard
+                                </textPath>
+                            </text>
+
+                            <!-- Clipped Inner Scene -->
+                            <g clip-path="url(#innerCircleClip)">
+                                <!-- Soundwave Line Left & Right -->
+                                <path d="M 45,165 L 112,165 L 118,150 L 125,182 L 133,132 L 142,194 L 150,148 L 157,175 L 164,165" 
+                                      fill="none" stroke="#135D66" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M 236,165 L 243,175 L 250,148 L 258,194 L 267,132 L 275,182 L 282,150 L 288,165 L 355,165" 
+                                      fill="none" stroke="#135D66" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+
+                                <!-- Vintage Microphone -->
+                                <g fill="#135D66">
+                                    <!-- Capsule -->
+                                    <rect x="176" y="102" width="48" height="84" rx="24" />
+                                    <!-- Grille Slits -->
+                                    <rect x="176" y="124" width="14" height="4" rx="2" fill="#D6EFEA" />
+                                    <rect x="176" y="134" width="14" height="4" rx="2" fill="#D6EFEA" />
+                                    <rect x="176" y="144" width="14" height="4" rx="2" fill="#D6EFEA" />
+                                    <rect x="176" y="154" width="14" height="4" rx="2" fill="#D6EFEA" />
+                                    <rect x="210" y="124" width="14" height="4" rx="2" fill="#D6EFEA" />
+                                    <rect x="210" y="134" width="14" height="4" rx="2" fill="#D6EFEA" />
+                                    <rect x="210" y="144" width="14" height="4" rx="2" fill="#D6EFEA" />
+                                    <rect x="210" y="154" width="14" height="4" rx="2" fill="#D6EFEA" />
+                                    <!-- Cradle U-Bracket -->
+                                    <path d="M 166,154 L 166,166 A 34,34 0 0,0 234,166 L 234,154" fill="none" stroke="#135D66" stroke-width="7" stroke-linecap="round" />
+                                    <!-- Stand Stem & Base -->
+                                    <rect x="196" y="198" width="8" height="26" />
+                                    <rect x="174" y="222" width="52" height="7" rx="3.5" />
+                                </g>
+
+                                <!-- Leighton Buzzard Market Cross (Left) -->
+                                <g transform="translate(75, 178)" fill="#135D66">
+                                    <!-- Central Spire -->
+                                    <polygon points="32,0 25,22 39,22" />
+                                    <rect x="31" y="-6" width="2" height="8" />
+                                    <rect x="28" y="-3" width="8" height="2" />
+                                    <!-- Upper Tier -->
+                                    <rect x="22" y="22" width="20" height="16" fill="none" stroke="#135D66" stroke-width="2.5" />
+                                    <polygon points="18,22 21,13 24,22" />
+                                    <polygon points="40,22 43,13 46,22" />
+                                    <!-- Lower Pentagonal Arch Base -->
+                                    <rect x="12" y="38" width="40" height="32" fill="none" stroke="#135D66" stroke-width="3" />
+                                    <path d="M 24,70 L 24,52 Q 32,43 40,52 L 40,70 Z" fill="#135D66" />
+                                    <polygon points="9,38 12,27 15,38" />
+                                    <polygon points="49,38 52,27 55,38" />
+                                </g>
+
+                                <!-- Leighton Buzzard Light Railway Steam Train (Right) -->
+                                <g transform="translate(256, 198)" fill="#135D66">
+                                    <!-- Puff of Steam -->
+                                    <path d="M 22,-4 Q 16,-14 27,-16 Q 35,-24 46,-17 Q 55,-15 51,-6 Q 43,-2 33,-5 Z" fill="#FFFFFF" stroke="#135D66" stroke-width="2" />
+                                    <!-- Funnel & Dome -->
+                                    <polygon points="16,16 14,2 23,2 21,16" />
+                                    <path d="M 31,16 A 5,5 0 0,1 41,16 Z" />
+                                    <!-- Boiler & Cab -->
+                                    <rect x="12" y="16" width="38" height="18" rx="2" />
+                                    <rect x="46" y="8" width="20" height="26" rx="1" />
+                                    <rect x="50" y="12" width="11" height="9" fill="#D6EFEA" />
+                                    <!-- Chassis & Wheels -->
+                                    <rect x="8" y="34" width="62" height="4" />
+                                    <circle cx="20" cy="41" r="5" fill="#D6EFEA" stroke="#135D66" stroke-width="3" />
+                                    <circle cx="35" cy="41" r="5" fill="#D6EFEA" stroke="#135D66" stroke-width="3" />
+                                    <circle cx="52" cy="41" r="5" fill="#D6EFEA" stroke="#135D66" stroke-width="3" />
+                                    <line x1="18" y1="41" x2="54" y2="41" stroke="#135D66" stroke-width="2" />
+                                </g>
+
+                                <!-- Rolling Green Hills & Grand Union Canal Water -->
+                                <path d="M 50,248 Q 130,242 200,262 Q 275,244 350,248 L 350,350 L 50,350 Z" fill="#4E9A8E" />
+                                <path d="M 50,265 Q 145,252 225,280 Q 290,265 350,272 L 350,350 L 50,350 Z" fill="#2E7D87" />
+                                <!-- Canal Waterway Curve -->
+                                <path d="M 85,345 Q 115,272 210,275 Q 295,278 335,315 L 315,350 Z" fill="#186875" />
+                                <path d="M 105,345 Q 135,292 215,295 Q 275,297 305,335 Z" fill="#63B8B2" opacity="0.6" />
+
+                                <!-- Grand Union Canal Narrowboat -->
+                                <g transform="translate(152, 268)">
+                                    <!-- Hull -->
+                                    <path d="M 6,28 L 118,22 L 112,38 Q 60,44 10,38 Z" fill="#135D66" />
+                                    <path d="M 9,31 L 115,25" stroke="#D6EFEA" stroke-width="2" />
+                                    <!-- Cabin -->
+                                    <path d="M 24,27 L 28,12 L 102,9 L 105,23 Z" fill="#237580" stroke="#135D66" stroke-width="2.5" />
+                                    <!-- Cabin Roof -->
+                                    <path d="M 26,12 L 103,9" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+                                    <!-- Windows -->
+                                    <rect x="38" y="15" width="12" height="7" rx="1" fill="#E5F6F3" />
+                                    <rect x="58" y="14" width="12" height="7" rx="1" fill="#E5F6F3" />
+                                    <rect x="78" y="13" width="10" height="7" rx="1" fill="#E5F6F3" />
+                                    <!-- Tiller -->
+                                    <path d="M 12,28 L 2,21" stroke="#135D66" stroke-width="2.5" stroke-linecap="round" />
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. About the Project & Why Now -->
+    <section id="about" class="py-16 sm:py-24 bg-white border-y border-brand-teal/10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-14">
+                <span class="text-brand-teal font-semibold text-sm uppercase tracking-wider">About the Project &amp; Why Now</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-dark mt-2 mb-5">
+                    Every Street Has a Story Worth Keeping
+                </h2>
+                <p class="text-base sm:text-lg text-brand-slate/90 leading-relaxed">
+                    Leighton Buzzard has grown and changed remarkably over the last few decades. While historic buildings like our Market Cross and the Grand Union Canal remain at the heart of town, the personal memories of working life, childhood games, bustling Tuesday markets, and local character can easily fade if nobody sits down to press record.
+                </p>
+            </div>
+
+            <!-- 3 Pillar Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                <!-- Card 1 -->
+                <div class="bg-brand-mintLight/70 rounded-2xl p-7 border border-brand-teal/15 hover:border-brand-teal/35 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-brand-teal text-white flex items-center justify-center mb-5 shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-brand-dark mb-2.5">100% Independent &amp; Local</h3>
+                    <p class="text-sm sm:text-base text-brand-slate/85 leading-relaxed">
+                        Started independently by a fellow resident with a passion for local heritage—not a corporate or council top-down initiative. Built by neighbours, for neighbours.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-brand-mintLight/70 rounded-2xl p-7 border border-brand-teal/15 hover:border-brand-teal/35 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-brand-teal text-white flex items-center justify-center mb-5 shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-brand-dark mb-2.5">Everyday Voices Matter</h3>
+                    <p class="text-sm sm:text-base text-brand-slate/85 leading-relaxed">
+                        You don’t need to be famous to have an important story. From sand quarry workers and canal boaters to shopkeepers, teachers, and families who moved here recently—all voices belong.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-brand-mintLight/70 rounded-2xl p-7 border border-brand-teal/15 hover:border-brand-teal/35 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-brand-teal text-white flex items-center justify-center mb-5 shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-brand-dark mb-2.5">Captured Before It’s Lost</h3>
+                    <p class="text-sm sm:text-base text-brand-slate/85 leading-relaxed">
+                        Written facts tell us dates, but recorded voices carry laughter, regional accents, and genuine emotion—creating a living sound archive for future generations in LU7.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Two Ways to Get Involved -->
+    <section id="get-involved" class="py-16 sm:py-24 bg-brand-sand">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-brand-teal font-semibold text-sm uppercase tracking-wider">Join the Community Effort</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-dark mt-2 mb-4">
+                    Two Ways to Get Involved
+                </h2>
+                <p class="text-base text-brand-slate/90">
+                    Whether you have decades of Leighton Buzzard memories to share or want to help gather stories across town, we’d love to welcome you.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Option 1: Share Your Story -->
+                <div class="bg-white rounded-3xl p-8 sm:p-10 border border-brand-teal/15 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-mint text-brand-dark text-xs font-bold uppercase tracking-wide mb-5">
+                            For Residents of All Ages
+                        </div>
+                        <h3 class="font-serif text-2xl sm:text-3xl font-bold text-brand-dark mb-4">
+                            1. Share Your Story
+                        </h3>
+                        <p class="text-brand-slate/90 mb-6 leading-relaxed">
+                            Have you lived or worked in Leighton Buzzard, Linslade, or the surrounding villages? Sit down for a relaxed, friendly chat over a cup of tea and tell us about the town as you know it.
+                        </p>
+                        <ul class="space-y-3.5 text-sm sm:text-base text-brand-slate mb-8">
+                            <li class="flex items-start gap-3">
+                                <span class="w-5 h-5 rounded-full bg-brand-mint text-brand-teal flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">✓</span>
+                                <span><strong>No preparation needed:</strong> It’s a natural conversation, not an exam.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="w-5 h-5 rounded-full bg-brand-mint text-brand-teal flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">✓</span>
+                                <span><strong>Your comfort first:</strong> Recorded in your own home or a quiet local spot like the library or a community café.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="w-5 h-5 rounded-full bg-brand-mint text-brand-teal flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">✓</span>
+                                <span><strong>Full control:</strong> You approve what gets shared publicly and receive a personal copy of your recording.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="#join-form" onclick="selectRole('storyteller')" class="w-full py-3.5 px-6 rounded-full bg-brand-teal hover:bg-brand-dark text-white font-semibold text-center transition-colors shadow-sm">
+                        I Want to Share My Story &rarr;
+                    </a>
+                </div>
+
+                <!-- Option 2: Become a Volunteer Interviewer -->
+                <div class="bg-brand-dark text-white rounded-3xl p-8 sm:p-10 shadow-md flex flex-col justify-between relative overflow-hidden">
+                    <!-- Subtle decorative circle -->
+                    <div class="absolute -right-12 -top-12 w-48 h-48 rounded-full bg-brand-teal/30 pointer-events-none"></div>
+
+                    <div class="relative z-10">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-teal text-brand-mint text-xs font-bold uppercase tracking-wide mb-5">
+                            No Experience Required
+                        </div>
+                        <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white mb-4">
+                            2. Become a Volunteer Interviewer
+                        </h3>
+                        <p class="text-brand-mint/90 mb-6 leading-relaxed">
+                            I’m looking for curious, good-humoured locals to join me in conducting, recording, and transcribing interviews across the town so we can reach every neighbourhood.
+                        </p>
+                        <ul class="space-y-3.5 text-sm sm:text-base text-white/95 mb-8">
+                            <li class="flex items-start gap-3">
+                                <span class="w-5 h-5 rounded-full bg-brand-teal text-brand-mint flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">✓</span>
+                                <span><strong>Full guidance &amp; training:</strong> Learn simple interviewing techniques and how to use easy portable audio recorders.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="w-5 h-5 rounded-full bg-brand-teal text-brand-mint flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">✓</span>
+                                <span><strong>Flexible commitment:</strong> Help with just one interview a month, or assist with editing and transcribing from home.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="w-5 h-5 rounded-full bg-brand-teal text-brand-mint flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">✓</span>
+                                <span><strong>Great for students, retirees &amp; history fans:</strong> Meet fascinating neighbours and build real oral history skills.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="#join-form" onclick="selectRole('interviewer')" class="relative z-10 w-full py-3.5 px-6 rounded-full bg-brand-mint hover:bg-white text-brand-dark font-bold text-center transition-colors shadow-sm">
+                        I Want to Help Conduct Interviews &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Interactive Express Your Interest Form -->
+    <section id="join-form" class="py-16 sm:py-24 bg-white border-t border-brand-teal/10">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="text-brand-teal font-semibold text-sm uppercase tracking-wider">Get Started</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-dark mt-2 mb-3">
+                    Express Your Interest
+                </h2>
+                <p class="text-brand-slate/85 text-base">
+                    Choose how you’d like to be involved below and leave a few details. I’ll reply personally within a couple of days.
+                </p>
+            </div>
+
+            <div class="bg-brand-mintLight/60 rounded-3xl p-6 sm:p-10 border border-brand-teal/20 shadow-sm">
+                <!-- Role Toggle Switch -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 p-1.5 bg-white rounded-2xl border border-brand-teal/15 mb-8" role="tablist">
+                    <button type="button" id="tab-storyteller" onclick="selectRole('storyteller')" role="tab" aria-selected="true"
+                        class="py-3.5 px-4 rounded-xl text-sm sm:text-base font-bold transition-all bg-brand-teal text-white shadow-sm flex items-center justify-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                        I want to share my story
+                    </button>
+                    <button type="button" id="tab-interviewer" onclick="selectRole('interviewer')" role="tab" aria-selected="false"
+                        class="py-3.5 px-4 rounded-xl text-sm sm:text-base font-bold transition-all text-brand-slate hover:text-brand-teal flex items-center justify-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
+                        </svg>
+                        I want to help conduct interviews
+                    </button>
+                </div>
+
+                <!-- Form Element -->
+                <form id="interest-form" class="space-y-6">
+                    <input type="hidden" id="selected-role" name="role" value="Share My Story">
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label for="full-name" class="block text-sm font-semibold text-brand-dark mb-1.5">Your Name *</label>
+                            <input type="text" id="full-name" name="name" required placeholder="e.g. Margaret Evans"
+                                class="w-full px-4 py-3 rounded-xl bg-white border border-brand-teal/25 focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/20 outline-none transition">
+                        </div>
+                        <div>
+                            <label for="neighbourhood" class="block text-sm font-semibold text-brand-dark mb-1.5">Area / Neighbourhood</label>
+                            <input type="text" id="neighbourhood" name="neighbourhood" placeholder="e.g. Linslade, Town Centre, Heath & Reach"
+                                class="w-full px-4 py-3 rounded-xl bg-white border border-brand-teal/25 focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/20 outline-none transition">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-brand-dark mb-1.5">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="you@example.com"
+                                class="w-full px-4 py-3 rounded-xl bg-white border border-brand-teal/25 focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/20 outline-none transition">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-semibold text-brand-dark mb-1.5">Phone Number (Optional)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="07700 900000"
+                                class="w-full px-4 py-3 rounded-xl bg-white border border-brand-teal/25 focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/20 outline-none transition">
+                        </div>
+                    </div>
+
+                    <!-- Topics of Interest Checkboxes -->
+                    <div>
+                        <span id="topics-label" class="block text-sm font-semibold text-brand-dark mb-2.5">
+                            Topics or memories you’d love to explore (select all that apply):
+                        </span>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                            <label class="flex items-center gap-3 p-3 rounded-xl bg-white border border-brand-teal/15 cursor-pointer hover:border-brand-teal/40 transition">
+                                <input type="checkbox" name="topics" value="High Street & Charter Market" class="w-4 h-4 accent-brand-teal rounded">
+                                <span class="text-sm font-medium text-brand-slate">High Street &amp; Charter Market</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3 rounded-xl bg-white border border-brand-teal/15 cursor-pointer hover:border-brand-teal/40 transition">
+                                <input type="checkbox" name="topics" value="Grand Union Canal" class="w-4 h-4 accent-brand-teal rounded">
+                                <span class="text-sm font-medium text-brand-slate">Grand Union Canal &amp; Boating</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3 rounded-xl bg-white border border-brand-teal/15 cursor-pointer hover:border-brand-teal/40 transition">
+                                <input type="checkbox" name="topics" value="Narrow Gauge Railway & Sand Quarries" class="w-4 h-4 accent-brand-teal rounded">
+                                <span class="text-sm font-medium text-brand-slate">Light Railway &amp; Sand Quarries</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3 rounded-xl bg-white border border-brand-teal/15 cursor-pointer hover:border-brand-teal/40 transition">
+                                <input type="checkbox" name="topics" value="Local Schools & Community Life" class="w-4 h-4 accent-brand-teal rounded">
+                                <span class="text-sm font-medium text-brand-slate">Local Schools &amp; Community Life</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3 rounded-xl bg-white border border-brand-teal/15 cursor-pointer hover:border-brand-teal/40 transition">
+                                <input type="checkbox" name="topics" value="Newcomers to Leighton Buzzard" class="w-4 h-4 accent-brand-teal rounded">
+                                <span class="text-sm font-medium text-brand-slate">Newcomers to Leighton Buzzard</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3 rounded-xl bg-white border border-brand-teal/15 cursor-pointer hover:border-brand-teal/40 transition">
+                                <input type="checkbox" name="topics" value="Pubs, Music & Nightlife" class="w-4 h-4 accent-brand-teal rounded">
+                                <span class="text-sm font-medium text-brand-slate">Local Pubs, Music &amp; Clubs</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Notes Field -->
+                    <div>
+                        <label id="notes-label" for="notes" class="block text-sm font-semibold text-brand-dark mb-1.5">
+                            A little about your connection to Leighton Buzzard (Optional)
+                        </label>
+                        <textarea id="notes" name="notes" rows="3" placeholder="Tell me briefly about a memory you have, or let me know if you're nominating a parent/grandparent..."
+                            class="w-full px-4 py-3 rounded-xl bg-white border border-brand-teal/25 focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/20 outline-none transition"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 px-6 rounded-full bg-brand-teal hover:bg-brand-dark text-white font-bold text-base shadow-md hover:shadow-lg transition-all cursor-pointer">
+                        Send My Expression of Interest
+                    </button>
+                </form>
+
+                <!-- Immediate Confirmation Message Box (Hidden until submit) -->
+                <div id="form-confirmation" class="hidden text-center py-8 px-4 space-y-4">
+                    <div class="w-16 h-16 rounded-full bg-brand-teal text-white flex items-center justify-center mx-auto shadow-md">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-brand-dark">Thank You for Getting Involved!</h3>
+                    <p id="confirmation-summary" class="text-brand-slate max-w-lg mx-auto leading-relaxed"></p>
+                    <div class="pt-3">
+                        <button type="button" onclick="resetInterestForm()" class="px-6 py-2.5 rounded-full bg-white border border-brand-teal/30 text-brand-teal font-semibold text-sm hover:bg-brand-mintLight transition">
+                            Submit Another Response
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FAQ Accordion Section -->
+    <section id="faq" class="py-16 sm:py-24 bg-brand-sand border-t border-brand-teal/10">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-brand-teal font-semibold text-sm uppercase tracking-wider">Common Questions</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-dark mt-2">
+                    Frequently Asked Questions
+                </h2>
+            </div>
+
+            <div class="space-y-4" id="faq-container">
+                <!-- FAQ 1 -->
+                <div class="bg-white rounded-2xl border border-brand-teal/15 overflow-hidden shadow-sm">
+                    <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-serif font-bold text-lg text-brand-dark hover:text-brand-teal transition-colors">
+                        <span>Where do the interviews take place?</span>
+                        <svg class="faq-chevron w-5 h-5 text-brand-teal shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-5 text-brand-slate/90 text-sm sm:text-base leading-relaxed border-t border-brand-teal/5 pt-3">
+                        Wherever you feel most comfortable and relaxed! For many people, that’s sitting in their own living room over a cup of tea. If you prefer a neutral public spot, we can arrange a quiet corner at Leighton Buzzard Library, a local community centre, or a quiet café at an off-peak time.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-white rounded-2xl border border-brand-teal/15 overflow-hidden shadow-sm">
+                    <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-serif font-bold text-lg text-brand-dark hover:text-brand-teal transition-colors">
+                        <span>How is my privacy protected, and do I have control over my recording?</span>
+                        <svg class="faq-chevron w-5 h-5 text-brand-teal shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-5 text-brand-slate/90 text-sm sm:text-base leading-relaxed border-t border-brand-teal/5 pt-3">
+                        Absolutely. Before and after recording, you complete a simple consent form where you decide how your story is used. You can ask to pause at any time, request that specific parts be edited out, choose to use only your first name, or keep your recording strictly for archival preservation rather than public podcast/web release.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-white rounded-2xl border border-brand-teal/15 overflow-hidden shadow-sm">
+                    <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-serif font-bold text-lg text-brand-dark hover:text-brand-teal transition-colors">
+                        <span>How will the recordings be preserved for the future?</span>
+                        <svg class="faq-chevron w-5 h-5 text-brand-teal shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-5 text-brand-slate/90 text-sm sm:text-base leading-relaxed border-t border-brand-teal/5 pt-3">
+                        All interviews are recorded in uncompressed, archival-grade digital audio (WAV) alongside written summaries and transcripts. They will be backed up securely across multiple offline and cloud locations, shared online (with permission) as a free community listening archive, and offered to local Bedfordshire heritage repositories so future generations can hear Leighton Buzzard’s history firsthand.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-white rounded-2xl border border-brand-teal/15 overflow-hidden shadow-sm">
+                    <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-serif font-bold text-lg text-brand-dark hover:text-brand-teal transition-colors">
+                        <span>I want to volunteer as an interviewer—do I need my own equipment?</span>
+                        <svg class="faq-chevron w-5 h-5 text-brand-teal shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-5 text-brand-slate/90 text-sm sm:text-base leading-relaxed border-t border-brand-teal/5 pt-3">
+                        No! As this is an independent grassroots project, we provide a simple, easy-to-use digital voice recorder, question prompts, and a short 30-minute walk-through over coffee before your first chat. Even if you only have time to help transcribe recordings at home, that is hugely valuable too.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonus Section: Ready-to-Copy Social Media Launch Post -->
+    <section id="social-kit" class="py-16 bg-brand-mintLight/80 border-t border-brand-teal/15">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <span class="text-brand-teal font-semibold text-sm uppercase tracking-wider">Help Spread the Word</span>
+                <h2 class="font-serif text-2xl sm:text-3xl font-bold text-brand-dark mt-1">
+                    Community Social Media Launch Post
+                </h2>
+                <p class="text-sm text-brand-slate/80 mt-2">
+                    Copy and share this post on local Leighton Buzzard Facebook groups, Nextdoor, or Instagram to invite neighbours!
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 sm:p-8 border border-brand-teal/20 shadow-sm">
+                <div class="flex items-center justify-between gap-4 pb-4 mb-4 border-b border-brand-teal/10">
+                    <div class="flex items-center gap-2.5">
+                        <span class="w-3 h-3 rounded-full bg-brand-teal"></span>
+                        <span class="text-xs font-bold uppercase tracking-wider text-brand-teal">Ready-to-Post Announcement</span>
+                    </div>
+                    <button type="button" id="copy-post-btn" onclick="copySocialPost()" class="px-4 py-2 rounded-full bg-brand-teal hover:bg-brand-dark text-white text-xs sm:text-sm font-semibold transition flex items-center gap-2 shadow-sm">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        </svg>
+                        <span id="copy-btn-text">Copy Post Text</span>
+                    </button>
+                </div>
+
+                <div id="social-post-text" class="text-sm sm:text-base text-brand-slate leading-relaxed whitespace-pre-line font-sans bg-brand-sand/60 p-5 rounded-xl border border-brand-teal/10">🎙️ Starting something new for our town: Stories in Sound: Leighton Buzzard! 🚂⛵🏛️
+
+Hi everyone! I’m a local Leighton Buzzard resident and history enthusiast, and I’m independently setting up a brand-new grassroots oral history project called Stories in Sound: Leighton Buzzard — dedicated to preserving the living history of our town through the voices of the people who know it best.
+
+Every street, pub, school, and canal towpath in Leighton Buzzard & Linslade has memories attached to it. From memories of Tuesday Charter Markets, the sand quarries, and the Narrow Gauge Railway, to growing up here in the 60s, 70s, 80s—or making LB your home more recently—I want to record and preserve those everyday stories before they’re lost.
+
+I’m looking for TWO groups of locals to get involved:
+1️⃣ Storytellers: Residents of all ages and backgrounds willing to sit down for a relaxed, friendly chat about your memories of life in Leighton Buzzard. (Or nominate a parent, grandparent, or neighbour with great stories!)
+2️⃣ Volunteer Interviewers: Curious, friendly locals who’d like to help me conduct, record, or transcribe interviews across town. No prior experience needed at all—I’ll provide full guidance and simple recording gear!
+
+If you’d like to share your story or help gather interviews, visit our project website to express your interest:
+👉 [Insert Your Website Link]
+
+Please give this a share or tag someone in the comments who has brilliant Leighton Buzzard memories! 💬👇
+
+#LeightonBuzzard #Linslade #StoriesInSound #LocalHistory #OralHistory #Bedfordshire #LU7 #CommunityProject</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-brand-mint/80 py-12 border-t border-brand-teal/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+            <div>
+                <p class="font-serif text-lg font-bold text-white">Stories in Sound: Leighton Buzzard</p>
+                <p class="text-sm text-brand-mint/75 mt-1">Preserving the Living History of Leighton Buzzard • Independent Community Initiative</p>
+            </div>
+            <div class="text-xs text-brand-mint/60">
+                Made with care in Leighton Buzzard, Bedfordshire (LU7)
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        // 1. Mobile Navigation Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const iconOpen = document.getElementById('menu-icon-open');
+        const iconClose = document.getElementById('menu-icon-close');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            iconOpen.classList.toggle('hidden');
+            iconClose.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                iconOpen.classList.remove('hidden');
+                iconClose.classList.add('hidden');
+            });
+        });
+
+        // 2. Interactive Audio Preview / Sample Story Player (Web Audio API + Visual Waveform)
+        const waveformContainer = document.getElementById('waveform-container');
+        const playBtn = document.getElementById('play-sample-btn');
+        const iconPlay = document.getElementById('icon-play');
+        const iconPause = document.getElementById('icon-pause');
+        const audioTimer = document.getElementById('audio-timer');
+        const sampleCaption = document.getElementById('sample-caption');
+
+        const barHeights = [28, 45, 70, 55, 90, 65, 40, 80, 95, 50, 35, 75, 88, 60, 42, 78, 92, 54, 38, 68, 85, 48, 32, 60, 74, 44, 30];
+        const bars = [];
+
+        // Build waveform bars
+        barHeights.forEach((height, idx) => {
+            const bar = document.createElement('div');
+            bar.className = 'flex-1 rounded-full bg-brand-teal/25 transition-all duration-150';
+            bar.style.height = `${height}%`;
+            waveformContainer.appendChild(bar);
+            bars.push(bar);
+        });
+
+        let isPlaying = false;
+        let currentSecond = 0;
+        const totalSeconds = 24;
+        let playbackInterval = null;
+        let audioCtx = null;
+        let ambientInterval = null;
+
+        const captionsTimeline = [
+            { sec: 0, text: '“You could always tell it was Tuesday morning by the bustle around the Market Cross...”' },
+            { sec: 6, text: '“We’d walk down past the canal bridge to watch the narrowboats queueing at the lock...”' },
+            { sec: 13, text: '“And you’d hear the whistle of the little steam train hauling sand from the quarries.”' },
+            { sec: 19, text: '“Every family in Leighton Buzzard has a memory like that—let’s record yours.”' }
+        ];
+
+        // Gentle Web Audio API warm soundscape chime so user hears pleasant feedback without external files
+        function playGentleSoundscape() {
+            try {
+                const AudioContext = window.AudioContext || window.webkitAudioContext;
+                if (!audioCtx) audioCtx = new AudioContext();
+                if (audioCtx.state === 'suspended') audioCtx.resume();
+
+                const notes = [261.63, 329.63, 392.00, 493.88]; // Warm Cmaj7 ambient chord tones
+                let noteIdx = 0;
+
+                const triggerTone = () => {
+                    if (!isPlaying || !audioCtx) return;
+                    const osc = audioCtx.createOscillator();
+                    const gain = audioCtx.createGain();
+                    osc.type = 'sine';
+                    osc.frequency.setValueAtTime(notes[noteIdx % notes.length], audioCtx.currentTime);
+                    noteIdx++;
+
+                    gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.035, audioCtx.currentTime + 0.4);
+                    gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 2.2);
+
+                    osc.connect(gain);
+                    gain.connect(audioCtx.destination);
+                    osc.start();
+                    osc.stop(audioCtx.currentTime + 2.3);
+                };
+
+                triggerTone();
+                ambientInterval = setInterval(triggerTone, 2400);
+            } catch (e) {
+                // Fallback gracefully if audio blocked
+            }
+        }
+
+        function stopGentleSoundscape() {
+            if (ambientInterval) {
+                clearInterval(ambientInterval);
+                ambientInterval = null;
+            }
+        }
+
+        function updateWaveformVisuals() {
+            const progressRatio = currentSecond / totalSeconds;
+            const activeIndex = Math.floor(progressRatio * bars.length);
+
+            bars.forEach((bar, i) => {
+                if (i <= activeIndex && isPlaying) {
+                    bar.classList.remove('bg-brand-teal/25');
+                    bar.classList.add('bg-brand-teal');
+                    const jitter = Math.max(20, Math.min(100, barHeights[i] + (Math.random() * 24 - 12)));
+                    bar.style.height = `${jitter}%`;
+                } else if (i <= activeIndex) {
+                    bar.classList.remove('bg-brand-teal/25');
+                    bar.classList.add('bg-brand-teal');
+                    bar.style.height = `${barHeights[i]}%`;
+                } else {
+                    bar.classList.remove('bg-brand-teal');
+                    bar.classList.add('bg-brand-teal/25');
+                    bar.style.height = `${barHeights[i]}%`;
+                }
+            });
+
+            const formattedSec = currentSecond < 10 ? `0${currentSecond}` : currentSecond;
+            audioTimer.textContent = `0:${formattedSec} / 0:${totalSeconds}`;
+
+            const currentCaption = [...captionsTimeline].reverse().find(c => currentSecond >= c.sec);
+            if (currentCaption && isPlaying) {
+                sampleCaption.textContent = currentCaption.text;
+            }
+        }
+
+        function toggleSampleAudio() {
+            isPlaying = !isPlaying;
+            if (isPlaying) {
+                if (currentSecond >= totalSeconds) currentSecond = 0;
+                iconPlay.classList.add('hidden');
+                iconPause.classList.remove('hidden');
+                playGentleSoundscape();
+                updateWaveformVisuals();
+
+                playbackInterval = setInterval(() => {
+                    currentSecond++;
+                    if (currentSecond > totalSeconds) {
+                        isPlaying = false;
+                        currentSecond = 0;
+                        clearInterval(playbackInterval);
+                        stopGentleSoundscape();
+                        iconPlay.classList.remove('hidden');
+                        iconPause.classList.add('hidden');
+                        sampleCaption.textContent = '"Press play to hear an ambient soundscape & preview of how our oral history recordings capture warmth and place..."';
+                    }
+                    updateWaveformVisuals();
+                }, 1000);
+            } else {
+                clearInterval(playbackInterval);
+                stopGentleSoundscape();
+                iconPlay.classList.remove('hidden');
+                iconPause.classList.add('hidden');
+                updateWaveformVisuals();
+            }
+        }
+
+        playBtn.addEventListener('click', toggleSampleAudio);
+        waveformContainer.addEventListener('click', toggleSampleAudio);
+
+        // 3. Express Your Interest Role Toggle & Form Handling
+        function selectRole(role) {
+            const tabStory = document.getElementById('tab-storyteller');
+            const tabInterviewer = document.getElementById('tab-interviewer');
+            const roleInput = document.getElementById('selected-role');
+            const topicsLabel = document.getElementById('topics-label');
+            const notesLabel = document.getElementById('notes-label');
+            const notesField = document.getElementById('notes');
+
+            if (role === 'storyteller') {
+                roleInput.value = 'Share My Story';
+                tabStory.className = 'py-3.5 px-4 rounded-xl text-sm sm:text-base font-bold transition-all bg-brand-teal text-white shadow-sm flex items-center justify-center gap-2';
+                tabStory.setAttribute('aria-selected', 'true');
+                tabInterviewer.className = 'py-3.5 px-4 rounded-xl text-sm sm:text-base font-bold transition-all text-brand-slate hover:text-brand-teal flex items-center justify-center gap-2';
+                tabInterviewer.setAttribute('aria-selected', 'false');
+
+                topicsLabel.textContent = 'Topics or memories you’d love to share (select all that apply):';
+                notesLabel.textContent = 'A little about your connection to Leighton Buzzard (Optional)';
+                notesField.placeholder = "Tell me briefly about a memory you have, or let me know if you're nominating a parent/grandparent...";
+            } else {
+                roleInput.value = 'Volunteer Interviewer';
+                tabInterviewer.className = 'py-3.5 px-4 rounded-xl text-sm sm:text-base font-bold transition-all bg-brand-teal text-white shadow-sm flex items-center justify-center gap-2';
+                tabInterviewer.setAttribute('aria-selected', 'true');
+                tabStory.className = 'py-3.5 px-4 rounded-xl text-sm sm:text-base font-bold transition-all text-brand-slate hover:text-brand-teal flex items-center justify-center gap-2';
+                tabStory.setAttribute('aria-selected', 'false');
+
+                topicsLabel.textContent = 'Which town themes would you enjoy researching or interviewing about?';
+                notesLabel.textContent = 'How would you like to help? (Optional)';
+                notesField.placeholder = 'e.g. Conducting interviews, helping transcribe audio from home, or outreach around town. No experience needed!';
+            }
+        }
+
+        const interestForm = document.getElementById('interest-form');
+        const formConfirmation = document.getElementById('form-confirmation');
+        const confirmationSummary = document.getElementById('confirmation-summary');
+
+        interestForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('full-name').value.trim();
+            const role = document.getElementById('selected-role').value;
+            const checkedTopics = Array.from(document.querySelectorAll('input[name="topics"]:checked')).map(cb => cb.value);
+
+            const topicText = checkedTopics.length > 0
+                ? ` around <strong>${checkedTopics.join(', ')}</strong>`
+                : '';
+
+            if (role === 'Share My Story') {
+                confirmationSummary.innerHTML = `Thanks so much, <strong>${name}</strong>! Your interest in <strong>sharing your Leighton Buzzard story</strong>${topicText} has been noted. I’ll be in touch shortly to arrange a relaxed, no-pressure chat at a time and place that suits you.`;
+            } else {
+                confirmationSummary.innerHTML = `Welcome aboard, <strong>${name}</strong>! Thank you for offering to help as a <strong>Volunteer Interviewer</strong>${topicText}. I’ll reach out soon so we can have a quick coffee and get you set up with our simple interview guide.`;
+            }
+
+            interestForm.classList.add('hidden');
+            formConfirmation.classList.remove('hidden');
+        });
+
+        function resetInterestForm() {
+            interestForm.reset();
+            selectRole('storyteller');
+            formConfirmation.classList.add('hidden');
+            interestForm.classList.remove('hidden');
+        }
+
+        // 4. FAQ Accordion Interaction
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const chevron = button.querySelector('.faq-chevron');
+                const isOpen = !content.classList.contains('hidden');
+
+                // Close all other items for clean mobile experience
+                document.querySelectorAll('.faq-content').forEach(item => item.classList.add('hidden'));
+                document.querySelectorAll('.faq-chevron').forEach(icon => icon.classList.remove('rotate-180'));
+
+                if (!isOpen) {
+                    content.classList.remove('hidden');
+                    chevron.classList.add('rotate-180');
+                }
+            });
+        });
+
+        // 5. Copy Social Media Post to Clipboard (using document.execCommand for iframe compatibility)
+        function copySocialPost() {
+            const postText = document.getElementById('social-post-text').innerText;
+            const textArea = document.createElement('textarea');
+            textArea.value = postText;
+            textArea.style.position = 'fixed';
+            textArea.style.left = '-9999px';
+            document.body.appendChild(textArea);
+            textArea.select();
+
+            try {
+                document.execCommand('copy');
+                const btnText = document.getElementById('copy-btn-text');
+                btnText.textContent = 'Copied to Clipboard!';
+                setTimeout(() => {
+                    btnText.textContent = 'Copy Post Text';
+                }, 2500);
+            } catch (err) {
+                // Fallback handled silently
+            }
+            document.body.removeChild(textArea);
+        }
+    </script>
+</body>
+</html>
